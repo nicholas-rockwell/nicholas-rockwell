@@ -79,7 +79,7 @@ a.pure-button-primary {
 }
 
 .splash-container {
-    background: url("/10750345_10205546662536258_5003195503056247848_o.jpg");
+    background: url("/assets/10750345_10205546662536258_5003195503056247848_o.jpg");
     background-position-y: -200px;
     z-index: 1;
     overflow: hidden;
@@ -463,28 +463,28 @@ div.buttonContainer2 button {
 }
 
 .resume {
-        background: url("cv.png");
+        background: url("/assets/cv.png");
         height: 500px;
         width: 500px;
         display: inline-block;
 }
 
 .linkedin {
-    background: url("linkedin.png");
+    background: url("/assets/linkedin.png");
         height: 500px;
         width: 500px;
         display: inline-block;
 } 
 
 .github {
-    background: url("github.png");
+    background: url("/assets/github.png");
         height: 500px;
         width: 500px;
         display: inline-block;
 }
 
 .email {
-    background: no-repeat url("email.png");
+    background: no-repeat url("/assets/email.png");
         height: 500px;
         width: 500px;
         display: inline-block;
