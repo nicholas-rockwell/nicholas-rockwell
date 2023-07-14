@@ -60,8 +60,8 @@ document.addEventListener('mousemove', (e) => {
 });
 
 window.addEventListener('scroll', () => {
-  mouseX = mouseX + (window.scrollX/2);
-  mouseY = mouseY + (window.scrollY/2);
+  mouseX = mouseX + (window.scrollX/4);
+  mouseY = mouseY + (window.scrollY/4);
 });
 
 
