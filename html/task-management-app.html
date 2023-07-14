@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Task Management Webpage</title>
+  <link rel="stylesheet" href="../css/task-management-styles.css">
+</head>
+
+<body>
+  <header>
+    Task Management Webpage
+  </header>
+
+  <div class="task-sections">
+    <div class="task-section" id="todays-section">
+      <h2 class="task-section-title">Todays Tasks</h2>
+      <div class="progress-bar">
+        <div class="progress-bar-fill"></div>
+        <span class="progress-bar-text">0%</span>
+      </div>
+      <ul class="task-list" id="todays-tasks">
+        <!-- Tasks -->
+      </ul>
+      <div class="add-task">
+        <input type="text" id="todays-task-input" placeholder="Enter a task">
+        <button class="add-button">Add Task</button>
+        <button id="clear-all-tasks">Clear Tasks</button>
+      </div>
+    </div>
+
+    <div class="task-section" id="weekly-section">
+      <h2 class="task-section-title">Weekly Tasks</h2>
+      <div class="progress-bar">
+        <div class="progress-bar-fill"></div>
+        <span class="progress-bar-text">0%</span>
+      </div>
+      <ul class="task-list" id="todays-tasks">
+        <!-- Tasks -->
+      </ul>
+      <div class="add-task">
+        <input type="text" id="weekly-task-input" placeholder="Enter a task">
+        <button class="add-button">Add Task</button>
+        <button id="clear-all-tasks">Clear Tasks</button>
+      </div>
+    </div>
+
+    <div class="task-section" id="monthly-section">
+      <h2 class="task-section-title">Monthly Tasks</h2>
+      <div class="progress-bar">
+        <div class="progress-bar-fill"></div>
+        <span class="progress-bar-text">0%</span>
+      </div>
+      <ul class="task-list" id="todays-tasks">
+        <!-- Tasks -->
+      </ul>
+      <div class="add-task">
+        <input type="text" id="monthly-task-input" placeholder="Enter a task">
+        <button class="add-button">Add Task</button>
+        <button id="clear-all-tasks">Clear Tasks</button>
+      </div>
+    </div>
+  </div>
+
+  <footer class="footer">
+    <a class="return-button" href="../html/index.html">Return to Resume</a>
+  </footer>
+
+  <script src="../js/task-management-script.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,357 @@
+/* styles.css */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f1f1f1;
+    cursor: url('../images/pokemon-cursor.png'), auto; /* Add the Pokemon cursor image */
+  }
+  
+  header {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 40px 20px 20px; /* Update the padding values */
+  }
+  
+  header h1 {
+    margin-top: 10px; /* Adjust the margin-top value as needed */
+  }
+  
+  header h3 {
+    color: #0099cc;
+    margin-top: 10px; /* Adjust the margin-top value as needed */
+
+}
+  
+  h1, h3 {
+    margin: 0;
+    margin-top: 40px; /* Adjust the margin-top value as needed */
+
+  }
+  
+  section {
+    margin-bottom: 20px;
+    padding: 20px;
+    background-color: rgba(255, 255, 255, 0.9);
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    margin-left: 20px;
+    margin-right: 20px;
+    transition: transform 0.3s;
+    cursor: default; /* Prevents the text editing cursor */
+  }
+  
+  section:hover {
+    transform: scale(1.02); /* Increase the scale value to adjust the growth effect */
+  }
+  section ul {
+    list-style: none;
+    padding: 0;
+  }
+
+  section ul li:not(:first-child)::before {
+    content: "";
+    display: none;
+  }
+
+  #projects {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center; /* Center items vertically */
+    text-align: center; /* Center text horizontally */
+  }
+  
+  #projects h2 {
+    flex-basis: 100%;
+    margin-bottom: 20px;
+  }
+  
+  .project {
+    flex-basis: calc(33.33% - 20px);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 20px;
+    padding: 0px;
+    background-color: rgba(255, 255, 255, 0.9);
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    text-align: center;
+  }
+  
+  .project img {
+    width: 100%;
+    max-height: 200px;
+    object-fit: cover;
+    margin-bottom: 10px;
+  }
+  
+  .project-details {
+    flex: 1;
+  }
+  
+  .project h3 {
+    margin-top: 0;
+  }
+  
+  .project p {
+    margin-bottom: 10px;
+  }
+  
+  .project a.button {
+    display: inline-block;
+  }
+  
+  
+  
+  a {
+    color: #333;
+    text-decoration: none;
+    transition: color 0.3s;
+  }
+  
+  a:hover {
+    color: #ff8000;
+  }
+  
+  a:active {
+    color: #ff5500;
+  }
+  
+  a:focus {
+    outline: none;
+  }
+  
+  a.button {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #ff8000;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 4px;
+    transition: background-color 0.3s;
+  }
+  
+  a.button:hover {
+    background-color: #0099cc;
+
+  }
+  
+  /* Added styles for colors and effects */
+  
+  /* Navigation bar */
+  nav {
+    background-color: #333;
+    padding: 10px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 999;
+  }
+  
+  nav ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    display: flex;
+    justify-content: center;
+  }
+  
+  nav li {
+    margin: 0 10px;
+  }
+  
+  nav a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 16px;
+    transition: color 0.3s;
+  }
+  
+  nav a:hover {
+    color: #ff8000;
+  }
+  
+  /* Colorful headings */
+  h1 {
+    font-size: 36px;
+    margin-top: 20px;
+    color: #ff8000;
+    cursor: default;
+  }
+  
+  h2 {
+    font-size: 24px;
+    color: #0099cc;
+    margin-top: 20px;
+    cursor: default;
+  }
+  
+  h3 {
+    font-size: 20px;
+    color: #555;
+    margin-top: 20px;
+    cursor: default;
+  }
+  
+  /* Background pattern */
+  body {
+    background-color: #f1f1f1;
+    background-image: url('../images/pattern.png');
+    background-repeat: repeat;
+    cursor: default;
+  }
+  
+  section {
+    margin-bottom: 20px;
+    padding: 20px;
+    background-color: rgba(255, 255, 255, 0.9);
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    text-align: center;
+  }
+  @keyframes fade-in {
+    0% {
+      opacity: 0;
+      transform: translateY(20px);
+    }
+    100% {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+  header {
+    background-image: url('../images/header-bg.jpg');
+    background-size: cover;
+    background-position: center;
+    height: 300px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  header h1, header h3 {
+    animation: slide-up 1s forwards;
+  }
+  
+  @keyframes slide-up {
+    0% {
+      opacity: 0;
+      transform: translateY(40px);
+    }
+    100% {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+.click-me {
+    position: fixed;
+    top: 10px;
+    right: 10px;
+    background-color: #ff8000;
+    color: #fff;
+    padding: 10px 15px;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    z-index: 999;
+  }
+  
+  .click-me:hover {
+    background-color: #ff5500;
+  }
+  
+  .contact-text {
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: #000;
+    color: #fff;
+    padding: 10px 20px;
+    border-radius: 4px;
+    font-size: 24px;
+    z-index: 999;
+    pointer-events: none;
+    transform: translate(-50%, -50%);
+    white-space: nowrap;
+  }
+
+  .click-me,
+  .remove-contact {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #ff8000;
+    color: #fff;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  .remove-contact {
+    margin-top: 10px;
+    display: none;
+  }
+
+.pokemon-popup {
+  display: none; /* Initially hide the popup */
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 1000;
+}
+
+#pokemon-popup {
+  width: 500px;  /* adjust as needed */
+  height: 500px;  /* adjust as needed */
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  display: none; /* hide it initially */
+  justify-content: center;
+  align-items: center;
+  background: #ffffff;
+  background-image: url(../images/pokemonFireRedBackground.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  border-radius: 5px;
+  padding: 20px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+  overflow: auto; /* In case the content inside the popup exceeds the height, it will make it scrollable */
+}
+
+.popup-content {
+  padding: 20px;
+  text-align: center;
+  border-radius: 10px;
+  top: 1%;
+  left: 15%;
+  position: absolute;
+}
+
+/* Styles for the Pokemon Cursor Follower */
+.pokemon-cursor-follower {
+  position: absolute;
+  pointer-events: none;
+  z-index: 1000;
+  width: 100px;
+  height: 100px;
+  display: none; /* Initially hide the cursor follower */
+}
+
+.pokemon-cursor-follower img {
+  width: 100%;
+  height: auto;
+}

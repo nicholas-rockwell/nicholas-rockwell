@@ -1,0 +1,137 @@
+body {
+  background-color: #43c59e;
+  font-family: 'Courier New', monospace;
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  background-color: #3D7068;
+  color: #FFF;
+  padding: 20px;
+  text-align: center;
+  font-size: 24px;
+}
+
+.task-sections {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 85vh;
+  justify-content: space-between;
+  padding: 20px;
+}
+
+.task-section {
+  flex: 1;
+  background-color: #14453d;
+  color: white;
+  border-radius: 8px;
+  padding: 20px;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+  margin-right: 20px;
+  height: 50vh;
+  text-align: center;
+}
+
+.task-section:last-child {
+  margin-right: 0;
+}
+
+.task-section-title {
+  font-size: 20px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.task-list {
+  list-style-type: none;
+  padding: 0;
+}
+
+.task-item {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.task-text {
+  margin-left: 10px;
+}
+
+.task-buttons {
+  display: flex;
+  gap: 10px;
+  margin-left: auto;
+}
+
+.task-button {
+  padding: 5px 10px;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 14px;
+  transition: background-color 0.3s ease;
+  border: none;
+  color: #FFF;
+}
+
+.task-button.complete {
+  background-color: #43C59E;
+}
+
+.task-button.delete {
+  background-color: #FF4949;
+}
+
+.footer {
+  background-color: #3D7068;
+  color: #FFF;
+  text-align: center;
+  padding: 10px;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+}
+
+.return-button {
+  background-color: #48beff;
+  border-radius: 4px;
+  border: none;
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  text-decoration: none;
+}
+
+.return-button:hover {
+  background-color: #3dfaff;
+}
+
+/* Add styles for the progress bar */
+.progress-bar {
+  position: relative;
+  height: 10px;
+  background-color: #ddd;
+  border-radius: 5px;
+  margin-bottom: 10px;
+}
+
+.progress-bar-fill {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  background-color: yellow;
+  border-radius: 5px;
+  transition: width 0.3s ease;
+}
+
+.progress-bar-text {
+  position: absolute;
+  top: -20px;
+  right: 0;
+  font-size: 14px;
+  font-weight: bold;
+  color: #ffffff;
+}
