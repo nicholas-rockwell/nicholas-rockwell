@@ -33,7 +33,7 @@ body {
   section {
     margin-bottom: 20px;
     padding: 20px;
-    background-color: rgba(255, 255, 255, 0.9);
+    background-color: rgba(0, 231, 104, 0.9);
     border-radius: 10px;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
     text-align: center;
@@ -76,7 +76,7 @@ body {
     align-items: center;
     margin-bottom: 20px;
     padding: 0px;
-    background-color: rgba(255, 255, 255, 0.9);
+    background-color: rgba(9, 136, 66, 0.9);
     border-radius: 10px;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
     text-align: center;
@@ -133,6 +133,10 @@ body {
     text-decoration: none;
     border-radius: 4px;
     transition: background-color 0.3s;
+    text-shadow: -1px 1px 2px #000,
+				  1px 1px 2px #000,
+				  1px -1px 0 #000,
+				  -1px -1px 0 #000;
   }
   
   a.button:hover {
@@ -182,6 +186,10 @@ body {
     margin-top: 20px;
     color: #ff8000;
     cursor: default;
+    text-shadow: -1px 1px 2px #000,
+				  1px 1px 2px #000,
+				  1px -1px 0 #000,
+				  -1px -1px 0 #000;
   }
   
   h2 {
@@ -189,13 +197,21 @@ body {
     color: #0099cc;
     margin-top: 20px;
     cursor: default;
+    text-shadow: -1px 1px 2px #000,
+				  1px 1px 2px #000,
+				  1px -1px 0 #000,
+				  -1px -1px 0 #000;
   }
   
   h3 {
     font-size: 20px;
-    color: #555;
+    color: #57abc7;
     margin-top: 20px;
     cursor: default;
+    text-shadow: -1px 1px 2px #000,
+				  1px 1px 2px #000,
+				  1px -1px 0 #000,
+				  -1px -1px 0 #000;
   }
   
   /* Background pattern */
@@ -209,11 +225,12 @@ body {
   section {
     margin-bottom: 20px;
     padding: 20px;
-    background-color: rgba(255, 255, 255, 0.9);
+    background-color: rgba(9, 136, 66, 0.9);
     border-radius: 10px;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
     text-align: center;
   }
+
   @keyframes fade-in {
     0% {
       opacity: 0;
@@ -313,12 +330,12 @@ body {
 }
 
 #pokemon-popup {
-  width: 500px;  /* adjust as needed */
-  height: 500px;  /* adjust as needed */
+  width: 350px;  /* adjust as needed */
+  height: 350px;  /* adjust as needed */
   position: fixed;
   top: 50%;
   left: 50%;
-  transform: translate(-50%, -50%);
+  transform: translate(-225%, -120%);
   display: none; /* hide it initially */
   justify-content: center;
   align-items: center;
@@ -333,12 +350,12 @@ body {
 }
 
 .popup-content {
-  padding: 20px;
+  padding: 0px;
   text-align: center;
   border-radius: 10px;
   top: 1%;
-  left: 15%;
-  position: absolute;
+  align-items: center;
+  position: fixed;
 }
 
 /* Styles for the Pokemon Cursor Follower */
