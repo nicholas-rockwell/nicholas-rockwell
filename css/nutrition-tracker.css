@@ -1,0 +1,107 @@
+ /* Basic CSS for styling */
+ body {
+    margin: 0;
+    padding: 0;
+    color: #6d7476;
+    font-family: 'Lucida Handwriting', Cursive;
+    background-color: #121312; /* Body background color */
+    overflow: hidden;
+}
+
+h2 {
+    margin-top: 0;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+}
+
+h3 {
+    margin-top: 0;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+}
+
+header {
+    background-color: #31363e; /* Header background color */
+    color: #88655e;
+    text-align: center; /* Horizontal alignment */
+    padding: 10px;
+    height: 10vh;
+    display: flex; /* Use flexbox */
+    align-items: center; /* Vertically center content */
+    justify-content: center;
+}
+
+ul {
+    text-align: left;
+    align-items: left;
+    justify-content: left;
+}
+
+li {
+    text-align: left;
+    align-items: left;
+    justify-content: left;
+}
+
+.company-name {
+    font-family: 'Copperplate', fantasy; /* Replace 'YourCustomFont' with your desired font name */
+    font-size: 24px; /* Adjust the font size as needed */
+    position: absolute; /* Enable absolute positioning for company name */
+    top: 10px; /* Adjust the top position to move it from the top edge */
+    left: 10px; /* Adjust the left position to move it from the left edge */
+}
+
+.container {
+    display: flex;
+    color: #88655e;
+    height: 100vh;
+}
+
+.date {
+    font-family: 'Copperplate', fantasy; /* Replace 'YourCustomFont' with your desired font name */
+    font-size: 24px; /* Adjust the font size as needed */
+    position: absolute; /* Enable absolute positioning for company name */
+    top: 10px; /* Adjust the top position to move it from the top edge */
+    right: 10px; /* Adjust the left position to move it from the left edge */
+}
+
+.sidebar {
+    width: 10vw; /* Adjust the width of the sidebar as needed */
+    height: 100vh;
+    background-color: #262626;
+    color: #88655e;
+    padding: 10px;
+    border-style: solid;
+}
+
+.sidebarRight {
+    width: 15vw; /* Adjust the width of the sidebar as needed */
+    height: 100vh;
+    background-color: #262626;
+    color: #88655e;
+    padding: 20px;
+    line-height: 2;
+    border-style: solid;
+}
+
+.content {
+    width: 80vw;
+    padding: 20px;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+}
+
+input[type="text"] {
+    width: 20vw;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 3px solid #015b72;
+    background-color : #d1d1d1; 
+    border-radius: 4px;
+    box-sizing: border-box;
+    text-align: center;
+    font-family: 'Lucida Handwriting', Cursive;
+}
