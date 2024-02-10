@@ -10,9 +10,11 @@ let pokemonCursorFollower = document.getElementById('pokemon-cursor-follower');
 let pokemonImage = document.getElementById('pokemon-image');
 
 // Show the popup when the page loads
-window.addEventListener('load', function() {
-  pokemonPopup.style.display = 'flex';
-});
+function showPopup() {
+  var popup = document.getElementById('pokemon-popup');
+  popup.classList.add('show');
+}
+setTimeout(showPopup, 2000);
 
 // Hide the popup when the skip button is clicked
 skipBtn.addEventListener('click', function() {
@@ -63,6 +65,5 @@ window.addEventListener('scroll', () => {
   mouseX = mouseX + 1;
   mouseY = mouseY + 1;
 });
-
 
 update();
