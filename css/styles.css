@@ -335,7 +335,7 @@ body {
     width: 300px;  /* adjust as needed */
     height: 350px;  /* adjust as needed */
     position: fixed;
-    top: 30%;
+    top: 35%;
     left: 20%;
     transform: translate(-50%, -50%);
     display: none; /* hide it initially */
